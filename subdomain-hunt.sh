@@ -15,12 +15,12 @@ command -v amass >/dev/null 2>&1 || { echo >&2 "[-] amass required to run script
 command -v sublist3r >/dev/null 2>&1 || { echo >&2 "[-] sublist3r required to run script.  Aborting."; exit 1; }
 command -v subfinder >/dev/null 2>&1 || { echo >&2 "[-] subfinder required to run script.  Aborting."; exit 1; }
 command -v httprobe >/dev/null 2>&1 || { echo >&2 "[-] httprobe required to run script.  Aborting."; exit 1; }
-#command -v subjack >/dev/null 2>&1 || { echo >&2 "[-] subjack required to run script.  Aborting."; exit 1; }
-#command -v wayback >/dev/null 2>&1 || { echo >&2 "[-] wayback required to run script.  Aborting."; exit 1; }
-#command -v whatweb >/dev/null 2>&1 || { echo >&2 "[-] whatweb required to run script.  Aborting."; exit 1; }
-#command -v meg >/dev/null 2>&1 || { echo >&2 "[-] meg required to run script.  Aborting."; exit 1; }
+command -v whatweb >/dev/null 2>&1 || { echo >&2 "[-] whatweb required to run script.  Aborting."; exit 1; }
 command -v eyewitness >/dev/null 2>&1 || { echo >&2 "[-] eyewitness required to run script.  Aborting."; exit 1; }
 command -v nmap >/dev/null 2>&1 || { echo >&2 "[-] nmap required to run script.  Aborting."; exit 1; }
+#command -v subjack >/dev/null 2>&1 || { echo >&2 "[-] subjack required to run script.  Aborting."; exit 1; }
+#command -v wayback >/dev/null 2>&1 || { echo >&2 "[-] wayback required to run script.  Aborting."; exit 1; }
+#command -v meg >/dev/null 2>&1 || { echo >&2 "[-] meg required to run script.  Aborting."; exit 1; }
 
 if [ ! -d "$url" ];then
 	mkdir $url
